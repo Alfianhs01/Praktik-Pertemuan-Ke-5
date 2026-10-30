@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Praktik JavaScript</title>
+</head>
+
+<body>
+
+    <h1>Praktik JavaScript</h1>
+
+    <p><a href="index.html">CONTOH 1</a> |
+        <a href="contoh2.html">CONTOH 2</a> |
+        <a href="contoh3.html">CONTOH 3</a> |
+        <a href="contoh4.html">CONTOH 4</a> |
+        <a href="contoh5.html">CONTOH 5</a> |
+        <a href="contoh6.html">CONTOH 6</a>
+    </p>
+
+    <p>Please input a number between 1 and 10:</p>
+
+    <input id="numb">
+
+    <button type="button" onclick="myFunction()">Submit</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x, text;
+
+            // Get the value of the input field with id="numb"
+            x = document.getElementById("numb").value;
+
+            // If x is Not a Number or less than one or greater than 10
+            if (isNaN(x) || x < 1 || x > 10) {
+                text = "Input not valid";
+            } else {
+                text = "Input OK";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+
+
+</body>
+
+</html>

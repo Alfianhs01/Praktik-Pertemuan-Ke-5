@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Praktik JavaScript</title>
+</head>
+
+<body>
+
+    <h1>Praktik JavaScript</h1>
+
+    <p><a href="index.html">CONTOH 1</a> |
+        <a href="contoh2.html">CONTOH 2</a> |
+        <a href="contoh3.html">CONTOH 3</a> |
+        <a href="contoh4.html">CONTOH 4</a> |
+        <a href="contoh5.html">CONTOH 5</a> |
+        <a href="contoh6.html">CONTOH 6</a>
+    </p>
+
+    <hr>
+
+    <form>
+        <p>Nama <input type="text" id="nama" required></p>
+        <p>Umur <input type="number" id="umur" required></p>
+        <button onclick="kirim()">KIRIM</button>
+    </form>
+    <p id="hasil"></p>
+    <script>
+        function kirim() {
+            var nama = document.getElementById('nama').value;
+            var umur = document.getElementById('umur').value;
+            document.getElementById('hasil').innerHTML = 'Nama :' + nama + ' | Umur :' + umur;
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Praktik JavaScript</title>
+</head>
+
+<body>
+
+    <h1>Praktik JavaScript</h1>
+
+    <p><a href="index.html">CONTOH 1</a> |
+        <a href="contoh2.html">CONTOH 2</a> |
+        <a href="contoh3.html">CONTOH 3</a> |
+        <a href="contoh4.html">CONTOH 4</a> |
+        <a href="contoh5.html">CONTOH 5</a> |
+        <a href="contoh6.html">CONTOH 6</a>
+    </p>
+
+    <hr>
+
+    <h1 id="halo">Hello World</h1>
+
+    <button onclick="document.getElementById('halo').innerHTML='Hello JS'">Click me !</button>
+    <button onclick="alert('Hello JS')">Click again</button>
+    <hr>
+    <button onclick="change()">Change</button>
+
+    <script>
+        function change() {
+            document.getElementById('halo').innerHTML = 'Hello Javascript !';
+        }
+    </script>
+
+    <script src="my.js"></script>
+
+
+</body>
+
+</html>
